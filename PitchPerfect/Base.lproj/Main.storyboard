@@ -20,14 +20,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv5-48-wio">
                                 <rect key="frame" x="250" y="250" width="100" height="100"/>
-                                <state key="normal" image="recordButton"/>
+                                <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="09Q-Ox-Tz1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsA-dr-zzl">
                                 <rect key="frame" x="275" y="449" width="50" height="50"/>
-                                <state key="normal" image="stopButton"/>
+                                <state key="normal" image="stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7O-RF-nem"/>
                                 </connections>
@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1059" y="251"/>
+            <point key="canvasLocation" x="1315" y="251"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="6EC-a2-2S4">
@@ -81,7 +81,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL4-M6-sT4">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
-                                                <state key="normal" image="Snail"/>
+                                                <state key="normal" image="snail"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="VNd-yv-o6s" eventType="touchUpInside" id="dOO-hh-29C"/>
                                                 </connections>
@@ -100,14 +100,14 @@
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYX-62-DFk">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="134"/>
-                                                <state key="normal" image="Chipmunk"/>
+                                                <state key="normal" image="chipmunk"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="VNd-yv-o6s" eventType="touchUpInside" id="Peu-Jl-mmq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyz-E8-gBM">
                                                 <rect key="frame" x="280" y="0.0" width="280" height="134"/>
-                                                <state key="normal" image="darthVader"/>
+                                                <state key="normal" image="vader"/>
                                                 <connections>
                                                     <action selector="playSoundForButton:" destination="VNd-yv-o6s" eventType="touchUpInside" id="2mx-pb-UQr"/>
                                                 </connections>
@@ -138,7 +138,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCH-k2-aGr">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="134"/>
-                                                <state key="normal" image="stopButton"/>
+                                                <state key="normal" image="stop"/>
                                                 <connections>
                                                     <action selector="stopButtonPressed:" destination="VNd-yv-o6s" eventType="touchUpInside" id="flw-7a-Usv"/>
                                                 </connections>
@@ -190,13 +190,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Chipmunk" width="100" height="100"/>
-        <image name="Snail" width="100" height="100"/>
-        <image name="darthVader" width="100" height="100"/>
+        <image name="RecordButton" width="100" height="100"/>
+        <image name="chipmunk" width="100" height="100"/>
         <image name="echo" width="100" height="100"/>
         <image name="rabbit" width="100" height="100"/>
-        <image name="recordButton" width="100" height="100"/>
         <image name="reverb" width="100" height="100"/>
-        <image name="stopButton" width="50" height="50"/>
+        <image name="snail" width="100" height="100"/>
+        <image name="stop" width="50" height="50"/>
+        <image name="vader" width="100" height="100"/>
     </resources>
 </document>
