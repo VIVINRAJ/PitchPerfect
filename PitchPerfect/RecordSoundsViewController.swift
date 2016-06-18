@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Vivin Raj on 10/05/16.
@@ -66,16 +66,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         print("Recording Finished")
         if (flag) {
-                self.performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
+                performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
                 }
             else {
                 print("Recording not finished")

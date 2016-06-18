@@ -26,14 +26,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsA-dr-zzl">
-                                <rect key="frame" x="275" y="449" width="50" height="50"/>
+                                <rect key="frame" x="275" y="401" width="50" height="50"/>
                                 <state key="normal" image="stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7O-RF-nem"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt2-ai-TV0">
-                                <rect key="frame" x="245" y="393" width="111" height="21"/>
+                                <rect key="frame" x="245" y="360" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,12 +41,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vt2-ai-TV0" firstAttribute="top" secondItem="Rv5-48-wio" secondAttribute="bottom" constant="43" id="Cgw-NT-MtE"/>
+                            <constraint firstItem="vt2-ai-TV0" firstAttribute="top" secondItem="Rv5-48-wio" secondAttribute="bottom" constant="10" id="Cgw-NT-MtE"/>
                             <constraint firstItem="vt2-ai-TV0" firstAttribute="centerX" secondItem="Rv5-48-wio" secondAttribute="centerX" id="Wir-Xb-5Sb"/>
                             <constraint firstItem="Rv5-48-wio" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zpr-8G-lyk"/>
                             <constraint firstItem="Rv5-48-wio" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lY9-se-U0m"/>
                             <constraint firstItem="FsA-dr-zzl" firstAttribute="centerX" secondItem="vt2-ai-TV0" secondAttribute="centerX" id="tfp-Dr-gTs"/>
-                            <constraint firstItem="FsA-dr-zzl" firstAttribute="top" secondItem="vt2-ai-TV0" secondAttribute="bottom" constant="35" id="xe7-uh-An4"/>
+                            <constraint firstItem="FsA-dr-zzl" firstAttribute="top" secondItem="vt2-ai-TV0" secondAttribute="bottom" constant="20" id="xe7-uh-An4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PAV-Ip-b3i"/>
@@ -168,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btU-up-tdd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1780" y="315"/>
+            <point key="canvasLocation" x="2035" y="204"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LXI-ha-KK1">

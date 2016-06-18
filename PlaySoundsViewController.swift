@@ -51,6 +51,10 @@ class PlaySoundsViewController: UIViewController {
         stopAudio()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        configureUI(.NotPlaying)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Play sounds loaded")
@@ -58,9 +62,7 @@ class PlaySoundsViewController: UIViewController {
         print("Audio setup done")
     }
     
-    override func viewWillAppear(animated: Bool) {
-        configureUI(.NotPlaying)
-    }
+   
     
     
 }
