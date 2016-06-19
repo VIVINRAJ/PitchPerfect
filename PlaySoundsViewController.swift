@@ -32,7 +32,7 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var innerStackView4: UIStackView!
     
     
-    // helper function: all the innerStackView should share the same style, configure them together
+    // func to set innerStackView
     func setInnerStackViewsAxis(axisStyle: UILayoutConstraintAxis)  {
         self.innerStackView1.axis = axisStyle
         self.innerStackView2.axis = axisStyle
@@ -40,9 +40,8 @@ class PlaySoundsViewController: UIViewController {
         self.innerStackView4.axis = axisStyle
     }
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        coordinator.animateAlongsideTransition({ (context) -> Void in
-        
+    //func to set Stack view for portrait & Landscape
+    func setStackViewLayout() {
         let orientation = UIApplication.sharedApplication().statusBarOrientation
         
         if orientation.isPortrait{
@@ -52,6 +51,12 @@ class PlaySoundsViewController: UIViewController {
             self.OuterStackView.axis = .Horizontal
             self.setInnerStackViewsAxis(.Vertical)
         }
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animateAlongsideTransition({ (context) -> Void in
+        
+        self.setStackViewLayout()
     }, completion: nil)
     }
     
@@ -81,13 +86,7 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         configureUI(.NotPlaying)
-        /*snailButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        rabbitButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        chipmunkButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        vaderButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        echoButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        reverbButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        stopButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit */
+        
     }
     
     override func viewDidLoad() {
@@ -95,7 +94,7 @@ class PlaySoundsViewController: UIViewController {
         print("Play sounds loaded")
         setupAudio()
         print("Audio setup done")
-       
+        setStackViewLayout()
     }
     
    
