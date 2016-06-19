@@ -26,6 +26,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    
+    //func to configure record button, stop and record label
     func configureButtons(mode: String, STB: Bool, RDB: Bool) {
                 RecordingLabel.text=mode
                 stopButton.enabled = STB
